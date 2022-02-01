@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: $black;
+    main {
+        @extend %set-height;
+        overflow-x: hidden !important;
+    }
+}
+
+a,
+button,
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.z-999 {
+    z-index: 999 !important;
+}
+.z-n999 {
+    z-index: -999 !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+.border-transparent {
+    border-color: transparent !important;
+}
+.overflow-x-auto {
+    overflow-x: auto !important;
+    white-space: nowrap;
+}
+.overflow-y-hidden {
+    overflow-y: hidden !important;
+}
+
+.btn-primary {
+    transition: 500ms;
+    &:hover {
+        opacity: 0.65;
+    }
+}
+
+.bg-clip-unset {
+    background-clip: unset !important;
+}
+
+.hover\:text-green {
+    transition: 500ms;
+    &:hover {
+        color: $green;
+    }
+}
+
+.password-eye-icon {
+    position: absolute;
+    color: rgb(179, 178, 178);
+    width: 20px;
+    height: 20px;
+    top: 38.5px;
+    right: 10px;
+    transition: 500ms;
+    cursor: pointer;
+    &:hover {
+        color: $black;
+    }
+}
+.gap-10 {
+    gap: 6rem !important;
+}
